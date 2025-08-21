@@ -24,7 +24,9 @@ export const TravelCard = ({ data, onClickTag }) => {
         />
       </div>
       <div className="row-right flex-1 box-border p-5">
-        <h3 className="text-xl font-bold mb-2.5">{data && data.title}</h3>
+        <a href={data && data.url}>
+          <h3 className="text-xl font-bold mb-2.5">{data && data.title}</h3>
+        </a>
         <p className="line-clamp-1 text-gray-500 text-xs ">
           {data && data.description}
         </p>
